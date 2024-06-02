@@ -1,10 +1,14 @@
 <script setup>
-const ruta=`${import.meta.env.VITE_API_URL}/inicio`
-console.log(ruta)
+import MainView from './views/MainView.vue';
+
 </script>
 
 <template>
+  
+  <MainView></MainView>
 
+
+ 
 </template>
 
 <style scoped>
