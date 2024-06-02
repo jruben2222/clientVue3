@@ -10,8 +10,9 @@ export const router = createRouter({
     linkActiveClass: 'active',
     routes: [
         { path: '/', component: MainView },
-        { path: '/contador',name:'contador', component: ()=>import('../components/Contador1.vue') },
-        { path: '/lista-de-tareas', name:'lista-de-tareas',component: ()=>import('../components/ListaDeTareas.vue') },
+        { path: '/contador',name:'contador', component: ()=>import('../modules/contador/components/Contador1.vue') },
+        { path: '/lista-de-tareas', name:'lista-de-tareas',component: ()=>import('../modules/listaDeTares/components/ListaDeTareas.vue') },
+        { path: '/registrar', name:'registrar',component: ()=>import('../modules/registro/views/RegistrarView.vue') },
         //{ path: '/login', component: LoginView }
     ]
 });
